@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import HeroBanner from '@/components/HeroBanner';
 import SearchBar from '@/components/SearchBar';
 import FilterChips from '@/components/FilterChips';
 import Categories from '@/components/Categories';
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#13111C] pb-20">
       <Header />
+      <HeroBanner />
       <SearchBar />
       <FilterChips />
       <Categories />
