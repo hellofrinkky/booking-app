@@ -1,10 +1,10 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
-export default function OTPPage() {
+function OTPContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const phone = searchParams.get('phone') || '0XXXXXXXXX';
@@ -174,5 +174,13 @@ export default function OTPPage() {
         </p>
       </div>
     </div>
+  );
+}
+
+export default function OTPPage() {
+  return (
+    <Suspense>
+      <OTPContent />
+    </Suspense>
   );
 }
