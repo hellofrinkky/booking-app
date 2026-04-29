@@ -15,6 +15,9 @@ const categories = [
   { id: '10', name: 'Spa',             image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=200&h=200&fit=crop' },
   { id: '11', name: 'Waxing',          image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=200&h=200&fit=crop' },
   { id: '12', name: 'Nail Art',        image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=200&h=200&fit=crop&crop=left' },
+  { id: '13', name: 'Barber',          image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=200&h=200&fit=crop' },
+  { id: '14', name: 'Tattoo',          image: 'https://images.unsplash.com/photo-1568515387631-8b650bbcdb90?w=200&h=200&fit=crop' },
+  { id: '15', name: 'Eyebrow Threading', image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=200&h=200&fit=crop&crop=top' },
 ];
 
 const INITIAL_SHOW = 8;
