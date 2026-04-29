@@ -17,7 +17,7 @@ const categories = [
   { id: '12', name: 'Nail Art',        image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=200&h=200&fit=crop&crop=left' },
 ];
 
-const INITIAL_SHOW = 6;
+const INITIAL_SHOW = 8;
 
 export default function Categories() {
   const [showAll, setShowAll] = useState(false);
@@ -34,10 +34,10 @@ export default function Categories() {
           {showAll ? 'Show less' : 'See all'} <span>{showAll ? '‹' : '›'}</span>
         </button>
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-4 gap-3">
         {visible.map((cat) => (
           <button key={cat.id} className="flex flex-col items-center gap-2">
-            <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-[#2E2A45] hover:border-[#7C6AF7] transition-colors">
+            <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#2E2A45] hover:border-[#7C6AF7] transition-colors">
               <img src={cat.image} alt={cat.name} className="w-full h-full object-cover" />
             </div>
             <span className="text-xs text-[#9B97B2] text-center leading-tight">{cat.name}</span>
